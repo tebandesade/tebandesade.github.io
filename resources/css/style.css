@@ -1,0 +1,235 @@
+@font-face {
+   font-family: 'test1';
+   src: url('fonts/SansationLight/SansationLight.woff');
+}
+@font-face {
+   font-family: 'test2';
+   src: url('fonts/montserrat/Montserrat-UltraLight.otf');
+}
+.nav > li > a:hover { 
+    background-color: transparent; 
+}
+html,body 
+{ 
+height: 105%;
+}
+
+.foto
+{
+	/*background-image: url('images/opcionlogo2allconglow.png');
+	*/
+	background-size: 50% % ;
+	width: 100%;
+	height: inherit;
+	margin-top: 100px;
+	
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+
+	
+	background-position: center;
+
+
+	
+	
+	
+}
+.foto2
+{
+/*background-image: url('images/color1s.png');*/
+height:  inherit;
+width: inherit;
+background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 32% 70%;
+
+}
+
+.container-fluid
+{
+	color: red;
+	height: inherit;
+}
+
+.row
+{
+padding-left: 20%;
+padding-top: 9%;
+}
+.row-nested p
+{
+	color:black;
+	padding-bottom: 10%;	
+}
+.diseno-base
+{
+	float:right;
+	width:33%;
+	height: inherit;	
+	border-style: none;
+}
+#item
+{
+	position: relative;
+	top:25%;
+}
+#item li
+{
+	text-align:center;
+  	padding:0;
+	margin: 15% 15% 15% 15%;
+ 	border-radius: 100% 100% 100% 100%;
+ 	border-width: 100%;
+ 	border-style: outset;
+ 	box-shadow: 10px 10px 4px #dfce74;
+ 	border-color: transparent 	  transparent transparent transparent	;
+ 	font-family: 'test2';
+ 	font-weight: bolder;
+ 	 font-size: 15px;
+ 	 line-height: 10px;
+ 	   letter-spacing: .2em;
+
+
+}
+#item li h3
+{
+	font-size: 11px;
+}
+#item li a
+{
+	text-align: center; 
+	display:block;
+	color:#282828;
+	padding: 1em 1em 1em 1em;
+}
+#item li h3:hover
+{
+	color: white;
+}
+/*#item li a:hover
+{
+	background-color: #cbae18;
+}
+
+#item li 
+{
+	font-color:white;
+}
+*/	
+.widget
+{
+	position: relative;
+	top:25%;
+	margin-top: 15%;
+	margin-bottom: -1%;
+	height: 25%;
+	border-radius: 25% 25% 25% 25%;
+	border-style: solid;
+	border-color: transparent #dfce74	 ;
+	box-shadow: 7px 5px 4px #dfce74;
+
+	
+		
+
+}
+
+
+.hvr-fade {
+  display: inline-block;
+  vertical-align: super;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: ;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: 0;
+  overflow: auto;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.7s;
+  -webkit-transition-property: color, background-color;
+  transition-property:  background-color,color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+	
+  background-color: #dfce74;
+  color:white;
+}
+
+.blog
+{
+	font-family: 'test2';
+ 	font-weight: bolder;
+ 	 font-size: 20px;
+ 	 line-height: 20px;
+ 	   letter-spacing: .2em;
+ 	color:#282828;
+ 	border-top-right-radius: 30px;
+	border-top-left-radius: 70%;
+	 border-color: #dfce74 transparent transparent transparent;
+	 border-style: solid;
+
+}
+
+#weekblog
+{
+	margin-top:25px;
+	font-size:15px;
+	line-height: 10px;
+	font-family:"test2";
+	font-weight: bolder;
+	letter-spacing:.2em;
+}
+
+.circle
+{
+	position: relative;
+	top:50%;
+	border-color: #5CB0D2 #5CB0D2	#0B9444 #5CB0D2;
+	border-style: solid;
+	border-collapse: collapse;
+	border-width: 150px;
+	border-radius: 100% 100% 100% 100%;
+}
+
+#circle1
+{
+	margin-top: -120px;
+	margin-left:-20px;
+	margin-bottom: -30px;
+	padding-bottom: 100px;
+		
+	border-color: #0B9444 #5CB0D2 #0B9444 #0B9444;
+	border-style: solid;
+	border-width: 70px;
+	border-radius: 100% 100% 100px 100px;
+}
+
+#circle2
+{
+
+
+	height:10px ;
+	border-color: red;
+	border-style: solid;
+	border-width: 20px;
+
+	border-radius: 0 0 0 0;
+}
+
+#mundo1
+{
+	position: relative;
+	top: 45%;
+	width: 100%;
+	height: 100%;
+	background-image: url('images/mundo.png');
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+
