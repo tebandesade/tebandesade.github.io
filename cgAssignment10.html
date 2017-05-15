@@ -63,7 +63,7 @@ var vs = vs_script.innerHTML, fs = fs_script.innerHTML;
 
 addTextEditor(fs, function() { canvas1.setShaders(vs, this.value); });
 
-var obj1, obj2,obj3;
+var obj1, obj2
 
 gl_start(canvas1, vs, fs,
    function(time) {
@@ -78,7 +78,6 @@ gl_start(canvas1, vs, fs,
   
        
          obj2.setMatrix(m);
-               M.rotateY(m, 180);
       M.restore(m);
 
     
@@ -89,7 +88,9 @@ gl_start(canvas1, vs, fs,
    var scene = new Scene();
 
    obj1 = new SceneObject();
-   obj1.setVertices([
+   
+   
+   /*obj1.setVertices([
   
          
       -.51,-.51, 0,  0,0,1,
@@ -102,6 +103,8 @@ gl_start(canvas1, vs, fs,
        
        
    ]);
+   */
+   obj1.setVertices(cilindro(50));
    scene.addObject(obj1);
  obj2 = new SceneObject();
    obj2.setVertices([
@@ -117,14 +120,34 @@ gl_start(canvas1, vs, fs,
    ]);
    scene.addObject(obj2);
    
-    obj3 = new SceneObject();
-   obj3.setVertices([
-      
-  
-  
+   function cilindro(n){
+   var vertices = [];
    
-   ]);
-   scene.addObject(obj3);
+   for (i = 0;i<n;i++)
+   {
+   	    j= (i+1)%n;
+        sigma = 2 * Math.pi * i/n;
+        sigmaa = 2* Math.pi * j /n ;
+        
+        ab = Math.cos(sigma);
+        abc = Math.sin(sigma);
+        abcd = Math.cos(sigmaa);
+         abcde = Math.sin(sigmaa);
+        
+        vertices.push(ab,abc,-1, ab,abc,0);
+        vertices.push(abcd,abcde,-1, abcd,abcde,0);
+        vertices.push(abcd,abcde,1, abcd,abcde,0);
+        vertices.push(abcd,abcde,1, ab,abc,0);
+        vertices.push(ab,abc,1, ab,abc,0);
+        vertices.push(ab,abc,-1, ab,abc,0);
+        
+
+   }
+   
+   return vertices;
+    
+   }
+   
   
 
    canvas1.scene = scene;
