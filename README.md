@@ -18,6 +18,8 @@ As stated above, this project uses:
 
 ## Author
 Yours' truely Esteban Galvis
+tebandesade.github.io
+
 
 ## Pic
 ![Screenshot](https://github.com/tebandesade/tebandesade.github.io/blob/master/resources/images/pic.jpg)
